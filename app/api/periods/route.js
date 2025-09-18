@@ -1,7 +1,7 @@
 // Period Tracking API Routes
 import { NextResponse } from "next/server"
 import { connectToDatabase, DatabaseOperations } from "../../../lib/database/mongodb.js"
-import { AuthService } from "../../../lib/auth/auth.js"
+import { AuthService } from "../../../lib/auth/auth"
 
 const authService = new AuthService()
 

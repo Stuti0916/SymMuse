@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server"
 import { ObjectId } from "mongodb"
 import { connectToDatabase } from "../../../../lib/database/mongodb.js"
-import { AuthService } from "../../../../lib/auth/auth.js"
+import { AuthService } from "../../../../lib/auth/auth"
 import { createNotification } from "../../../../lib/websocket/server.js"
 
 const authService = new AuthService()

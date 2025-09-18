@@ -1,8 +1,8 @@
 // Community Posts API Routes
 import { NextResponse } from "next/server"
 import { connectToDatabase, DatabaseOperations } from "../../../../lib/database/mongodb.js"
-import { AuthService } from "../../../../lib/auth/auth.js"
-import { broadcastToClients } from "../../../../lib/socket/socket.js" // Declare the broadcastToClients variable
+import { AuthService } from "../../../../lib/auth/auth"
+import { broadcastToClients } from "../../../../lib/socket/socket.js"
 
 const authService = new AuthService()
 

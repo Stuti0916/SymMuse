@@ -1,6 +1,6 @@
 // Premium Features API
 import { NextResponse } from "next/server"
-import { AuthService } from "../../../../lib/auth/auth.js"
+import { AuthService } from "../../../../lib/auth/auth"
 import { PremiumAccessControl } from "../../../../lib/premium/access-control.js"
 
 const authService = new AuthService()

@@ -1,7 +1,7 @@
 // Notifications API
 import { NextResponse } from "next/server"
 import { connectToDatabase } from "../../../lib/database/mongodb.js"
-import { AuthService } from "../../../lib/auth/auth.js"
+import { AuthService } from "../../../lib/auth/auth"
 import { ObjectId } from "mongodb"
 
 const authService = new AuthService()

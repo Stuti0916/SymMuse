@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server"
-import { AuthService } from "../../../../lib/auth/auth.js"
+import { AuthService } from "../../../../lib/auth/auth"
 
 const authService = new AuthService()
 

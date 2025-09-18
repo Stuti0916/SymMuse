@@ -35,28 +35,28 @@ declare namespace __next_route_internal_types__ {
     | `/api/auth/login`
     | `/api/auth/register`
     | `/api/auth/verify`
+    | `/api/consultations`
     | `/api/community/posts`
+    | `/api/doctors`
     | `/api/mood`
     | `/api/notifications`
+    | `/api/payments`
     | `/api/periods`
     | `/api/premium/features`
     | `/api/subscriptions`
     | `/api/subscriptions/cancel`
     | `/api/webhooks/stripe`
-    | `/api/consultations`
-    | `/api/payments`
-    | `/api/doctors`
     | `/auth/login`
     | `/auth/register`
     | `/dashboard`
   type DynamicRoutes<T extends string = string> = 
+    | `/api/consultations/${SafeSlug<T>}`
+    | `/api/consultations/${SafeSlug<T>}/rating`
     | `/api/community/posts/${SafeSlug<T>}`
     | `/api/community/posts/${SafeSlug<T>}/comments`
     | `/api/community/posts/${SafeSlug<T>}/like`
-    | `/api/periods/${SafeSlug<T>}`
-    | `/api/consultations/${SafeSlug<T>}`
-    | `/api/consultations/${SafeSlug<T>}/rating`
     | `/api/doctors/${SafeSlug<T>}/availability`
+    | `/api/periods/${SafeSlug<T>}`
 
   type RouteImpl<T> = 
     | StaticRoutes

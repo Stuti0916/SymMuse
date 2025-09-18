@@ -50,7 +50,7 @@ const HomePage = () => {
       </section>
 
       <footer id="contact" className="footer">
-        <p>Made with ❤️ by SymMuse Team</p>
+        <p>Made with love by SymMuse Team</p>
         <p>© 2025 SymMuse. All rights reserved.</p>
       </footer>
     </div>
